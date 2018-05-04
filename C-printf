@@ -1,0 +1,17 @@
+ 1 #include <stdio.h>
+ 2 #include <stdlib.h> 
+ 3 
+ 4 int main()
+ 5 {
+ 6     
+ 7     int a = 12;
+ 8     printf("八进制 --> %o\n", a);
+ 9     printf("十六进制 --> %X\n", a);
+10     printf("十进制 --> %d\n", a);
+11     char s[10];
+12     itoa(a, s, 2);
+13     printf("二进制 --> %s\n", s);
+14     itoa(a, s, 3);
+15     printf("三进制 --> %s\n", s);
+16     return 0;
+17 }
