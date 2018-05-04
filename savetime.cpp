@@ -4,6 +4,7 @@
 #include <time.h> 
 #include <sys/types.h>
 #include <unistd.h>
+
 int main()
 {
 	int year = 0, month = 0, day = 0, hour = 0, minute = 0, second = 0;
@@ -57,4 +58,7 @@ int main()
 		printf("write temptime file[%s] name[%s] error\n", "test.txt", buf);
 	}   
 	close(fd);
+
 	return 0;
+}
+
