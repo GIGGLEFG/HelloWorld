@@ -37,6 +37,16 @@ int main()
 		return -1;
 	}
                     
+/*
+	time_t tlog = time(NULL);
+	struct tm* tm = localtime(&tlog);
+	year = tm->tm_year + 1900;
+	month = tm->tm_mon + 1;
+	day = tm->tm_mday;
+	hour = tm->tm_hour;
+	minute = tm->tm_min;
+	second = tm->tm_sec;
+*/	
 	printf("buf = %s\n %4d-%2d-%2d_%2d-%2d-%2d_%c_%4d.%s \n", buf, year, month, day, hour, minute, second, event_type, duration, rec_type);
 
 	memset((void *)buf ,0, 128);
